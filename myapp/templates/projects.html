@@ -151,26 +151,26 @@
         <div class="overlay-switcher-close"></div>
 
                  <!-- Header area start -->
-         <header class="intDesigner-header pos-abs zi-9" style="background-color: #ddf88c;">
+        <header class="intDesigner-header pos-abs zi-9" style="background-color: #4a000a;">
           <div class="intDesigner-header__inner">
             <div class="intDesigner-header__logo">
               <a href="{% url 'home' %}">
-                <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747580773/Artboard_2_copy2_u2v6yl.png"  width="180px" alt="Site Logo">
+                <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747580767/Artboard_2_copy_2_vcgy5w.png"  width="180px" alt="Site Logo">
               </a>
             </div>
             <div class="intDesigner-header__nav">
               <nav class="main-menu menu-light">
-                <ul>
-                  <li><a href="{% url 'home' %}">home</a></li>
-                  <li><a href="{% url 'about' %}">about</a></li>
+                <ul style="color: #27391C;">
+                  <li><a href="{% url 'home' %}" style="color: #FFEAC5;">home</a></li>
+                  <li><a href="{% url 'about' %}" style="color: #FFEAC5;">about</a></li>
                   
                   <li >
-                    <a href="{% url 'projects' %}">project</a>
+                    <a href="{% url 'projects' %}" style="color: #FFEAC5;">project</a>
                   </li>
-                  <li><a href="{% url 'services' %}">Services</a></li>
-                  {% comment %} <li><a href="{% url 'packages' %}">Packages</a></li> {% endcomment %}
-                  {% comment %} <li><a href="{% url 'blog' %}">Blog</a></li> {% endcomment %}
-                  <li><a href="{% url 'contact' %}">Contact</a></li>
+                  <li><a href="{% url 'services' %}" style="color: #FFEAC5;">Services</a></li>
+                  <!-- <li><a href="{% url 'packages' %}" style="color: #FFEAC5;">Packages</a></li>
+                  <li><a href="{% url 'blog' %}" style="color: #FFEAC5;">Blog</a></li> -->
+                  <li><a href="{% url 'contact' %}" style="color: #FFEAC5;">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -188,15 +188,15 @@
 
 
           <!-- project area start  -->
-          <section class="intDesigner-project__inner pt-150 pb-150" style="background-color: #ddf88c;">
+          <section class="intDesigner-project__inner pt-150 pb-150" style="background-color: #4a000a;">
             <div class="container">
               <div class="intDesigner-project__inner-title-box mb-120">
                 <div class="intDesigner-project__sec-title-wrapper">
-                  <h1 class="sec-sub-title-18 mb-50 has_char_anim" style="color: #9bd067;">Showcase of</h1>
-                  <h2 class="sec-title-18 has_char_anim" data-delay="0.9" style="color: #27391C;">Portfolio</h2>
+                  <h1 class="sec-sub-title-18 mb-50 has_char_anim" style="color: #F3EEEA;">Showcase of</h1>
+                  <h2 class="sec-title-18 has_char_anim" data-delay="0.9" style="color: #FFEAC5;">Portfolio</h2>
                 </div>
                 <div class="intDesigner-award__list has_fade_anim">
-                  <span><a href="cost-estimator.html">GET YOUR FREE QUOTE</a></span>
+                  <span><a href="{% url 'contact' %}">GET YOUR FREE QUOTE</a></span>
                 </div>
               </div>
               <div class="intDesigner-portfolio__items">
@@ -215,9 +215,9 @@
 
                     <div class="interior-portfolio__content has_fade_anim">
                       <a href="project/Gautham-house.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. GAUTHAM</h3>
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. GAUTHAM</h3>
                       </a>
-                      <p>ANEKKAL</p>
+                      <p style="color: #F3EEEA;">ANEKKAL</p>
                     </div>
                   </div>
                 </div>
@@ -233,9 +233,9 @@
                     
                     <div class="interior-portfolio__content has_fade_anim">
                       <a href="project/Srinivasas.html">
-                        <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #27391C;">Mr. Sreenivas</h3>
+                        <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">Mr. Sreenivas</h3>
                       </a>
-                      <p>Chitradurga, Bangalore</p>
+                      <p style="color: #F3EEEA;">Chitradurga, Bangalore</p>
                     </div>
                   </div>
                 </div>
@@ -251,9 +251,9 @@
 
                     <div class="interior-portfolio__content has_fade_anim">
                       <a href="project/Zaheesh.html">
-                        <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #27391C;">Mr Zaheesh</h3>
+                        <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">Mr Zaheesh</h3>
                       </a>
-                      <p>Yelahanka</p>
+                      <p style="color: #F3EEEA;">Yelahanka</p>
                     </div>
                   </div>
                 </div>
@@ -269,9 +269,9 @@
 
                     <div class="interior-portfolio__content has_fade_anim">
                       <a href="project/Sparsh-house.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. SPARSH</h3>
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. SPARSH</h3>
                       </a>
-                      <p>Kerala</p>
+                      <p style="color: #F3EEEA;">Kerala</p>
                     </div>
                   </div>
                 </div>
@@ -287,9 +287,9 @@
 
                     <div class="interior-portfolio__content has_fade_anim">
                       <a href="project/Muniraj.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. Muniraj</h3>
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. Muniraj</h3>
                       </a>
-                      <p>Electronic City</p>
+                      <p style="color: #F3EEEA;">Electronic City</p>
                     </div>
                   </div>
                 </div>
@@ -305,9 +305,9 @@
                     </div>
                     <div class="interior-portfolio__content has_fade_anim">
                       <a href="project/Murali-house.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr.MURALI</h3>
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr.MURALI</h3>
                       </a>
-                      <p>Harlur</p>
+                      <p style="color: #F3EEEA;">Harlur</p>
                     </div>
 
                   </div>
@@ -322,13 +322,13 @@
           <!-- Upcoming projects -->
 
                     <!-- project area start  -->
-                    <section class="intDesigner-project__area" style="background-color: #ddf88c;">
+                    <section class="intDesigner-project__area" style="background-color: #4a000a;">
                       
                       <div class="container">
                         <div class="intDesigner-project__area-title-box mb-110">
                           <div class="intDesigner-project__sec-title-wrapper">
-                            <h3 class="sec-sub-title-18 mb-50 has_char_anim">Our upcoming</h3>
-                            <h2 class="sec-title-18 has_text_reveal_anim" style="color: #27391C;">Projects</h2>
+                            <h3 class="sec-sub-title-18 mb-50 has_char_anim" style="color: #F3EEEA;">Our upcoming</h3>
+                            <h2 class="sec-title-18 has_text_reveal_anim" style="color: #FFEAC5;">Projects</h2>
                           </div>
                           
                         </div>
@@ -339,16 +339,16 @@
                               <div class="intDesigner-portfolio__thumb">
                                 <a href="#">
                                   <div class="cf_image">
-                                    <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747465357/Biju_Joseph_jxawcz.jpg" alt="Portfolio Image">
+                                    <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748598105/wayanad_villa_project_xjqiof.jpg" alt="Portfolio Image">
                                   </div>
                                 </a>
                               </div>
           
                               <div class="interior-portfolio__content has_fade_anim">
                                 <a href="#">
-                                  <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #27391C;">Mr. Ramesh M
+                                  <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">Mr. Ramesh M
                                   </h3>
-                                  <p>Koramangala, Bangalore</p>
+                                  <p style="color: #F3EEEA;">Koramangala, Bangalore</p>
                                 </a>
                                 
                               </div>
@@ -366,8 +366,8 @@
           
                               <div class="interior-portfolio__content has_fade_anim">
                                 <a href="#">
-                                  <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #27391C;">Mr. SHIVA</h3>
-                                  <p>Arekere, Bangalore</p>
+                                  <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">Mr. SHIVA</h3>
+                                  <p style="color: #F3EEEA;">Arekere, Bangalore</p>
                                 </a>
                                 
                               </div>
@@ -386,8 +386,8 @@
           
                               <div class="interior-portfolio__content has_fade_anim">
                                 <a href="#">
-                                  <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. Veeresh S P</h3>
-                                  <p>Electronic City, Bangalore</p>
+                                  <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. Veeresh S P</h3>
+                                  <p style="color: #F3EEEA;">Electronic City, Bangalore</p>
                                 </a>
                                 
                               </div>
@@ -406,9 +406,9 @@
           
                               <div class="interior-portfolio__content has_fade_anim">
                                 <a href="#">
-                                  <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. Francis
+                                  <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. Francis
                                   </h3>
-                                  <p>Yelahanka, Bangalore</p>
+                                  <p style="color: #F3EEEA;">Yelahanka, Bangalore</p>
                                 </a>
                                
                               </div>
@@ -426,8 +426,8 @@
           
                               <div class="interior-portfolio__content has_fade_anim">
                                 <a href="#">
-                                  <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. Frederick</h3>
-                                  <p>Koramangala, Bangalore</p>
+                                  <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. Frederick</h3>
+                                  <p style="color: #F3EEEA;">Koramangala, Bangalore</p>
                                 </a>
                               </div>
                             </div>
@@ -444,8 +444,8 @@
           
                               <div class="interior-portfolio__content has_fade_anim">
                                 <a href="#">
-                                  <h3 class="intDesigner-portfolio__title" style="color: #27391C;">Mr. Reghuram</h3>
-                                  <p>Kerala</p>
+                                  <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mr. Reghuram</h3>
+                                  <p style="color: #F3EEEA;">Kerala</p>
                                 </a>
                               </div>
                             </div>
@@ -496,9 +496,11 @@
                 <div class="footer__widget">
                   <div class="intDesigner-footer__menu">
                     <ul>
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Careers</a></li>
-                      <li><a href="#">Gallery</a></li>
+                      <li><a href="{% url 'home' %}">Home</a></li>
+                      <li><a href="{% url 'about' %}">About</a></li>
+                      <li><a href="{% url 'projects' %}">Projects</a></li>
+                      <li><a href="{% url 'services' %}">Services</a></li>
+                      <li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                   </div>
                 </div>
@@ -514,9 +516,9 @@
                 <div class="footer__widget">
                   <div class="intDesigner-footer__menu">
                     <ul>
-                      <li><a href="mailto:info@keralahome.in">info@keralahome.in</a></li>
-                      <li><a href="tel:9980643040">Help Desk: 97654766686</a></li>
-                      <li><a href="tel:9353837087">HR: 97654766686</a></li>
+                      <li><a href="mailto:iamkeralahome@gmail.com">iamkeralahome@gmail.com</a></li>
+                      <li><a href="tel:9846194508">Help Desk : +91 9846194508</a></li>
+                      <li><a href="tel: 04872332599">Land Line: 0487 233 2599</a></li>
                     </ul>
                   </div>
                 </div>
@@ -530,7 +532,7 @@
                   <p>All rights reserved by Kerala Home</p>
                 </div>
                 <div class="intDesigner-copyright__social">
-                  <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Youtube</a><a href="#">LinkedIn</a>
+                  <a href="fb.com/iamkeralahome">Facebook</a><a href="#">Instagram</a><a href="#">Youtube</a><a href="https://wa.me/9846194508">Whatsapp</a>
                 </div>
                 <div class="intDesigner__go-top">
                   <p>Powered by <a href="#">Unsaid Creative</a></p>
