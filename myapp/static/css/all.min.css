@@ -23820,6 +23820,7 @@ ul li:last-child .default-details-comment-wrapper.has-reply::before {
 .intDesigner-hero__area {
   position: relative;
   z-index: 1;
+  height:100vh;
 }
 .intDesigner-hero__overlay {
   position: absolute;
