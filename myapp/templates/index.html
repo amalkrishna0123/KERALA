@@ -63,11 +63,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Leading traditional home construction company in Thrissur, Kerala. Experienced traditional builders offering budget-friendly, high-quality homes with a focus on heritage design and durability.">
-  <meta name="keywords" content="traditional home construction, traditional builder in Kerala, budget friendly home builders, best construction company in Thrissur, home builders Thrissur, Kerala house construction, heritage home builders">
+  <meta name="keywords" content="traditional kerala home construction in thrissur, traditional home construction, traditional builder in Kerala, budget friendly home builders, best construction company in Thrissur, home builders Thrissur, Kerala house construction, heritage home builders">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Top House Construction Company in Thrissur | Quality Homes by Kerala Home</title>
+  <title>Traditional Kerala Home Construction in Thrissur</title>
 
   <!-- Fav Icon -->
   <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dtouoqusd/image/upload/v1747464443/logo_bbeh04.png">
@@ -116,6 +116,99 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<style>
+  /* Original styles preserved exactly as provided */
+  .intDesigner-project__area {
+    position: relative;
+    overflow: hidden;
+    /* Added to contain animations */
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+
+  /* NEW ANIMATION STYLES - Leaf Animation */
+  .leaf-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .leaf {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+  }
+
+  .leaf img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotate(45deg);
+  }
+
+
+  /* Bubble Animation Styles */
+  .bubble-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+  }
+
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(255, 234, 197, 0.3), rgba(243, 238, 234, 0.1));
+    border: 1px solid rgba(255, 234, 197, 0.2);
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(2px);
+  }
+
+  .bubble::before {
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 30%;
+    height: 30%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+    border-radius: 50%;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+
+    .leaf  {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sec-title-18 {
+      font-size: 28px;
+    }
+
+    .leaf  {
+      width: 15px;
+      height: 15px;
+    }
+  }
+</style>
 </head>
 
 
@@ -125,24 +218,6 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
   <!-- Body Ovelay -->
   <div class="body-overlay" ></div>
 
-  <!-- Preloader
-  <div id="preloader">
-    <div id="container" class="container-preloader">
-      <div class="animation-preloader">
-        <div class="spinner"></div>
-        <div class="txt-loading">
-          <span data-text="I" class="characters">I</span>
-          <span data-text="N" class="characters">N</span>
-          <span data-text="F" class="characters">F</span>
-          <span data-text="O" class="characters">O</span>
-        </div>
-      </div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
-    </div>
-  </div> -->
-
-  <!-- Cursor Animation -->
   <div class="cursor1"></div>
 
 
@@ -273,7 +348,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
               <div class="intDesigner-hero__overlay"></div>
               <div class="has_image_zoom cf_image h-100 overflow-hidden mix-blend-multiply relative">
                 <!-- <div class="absolute inset-0 bg-black opacity-50 z-10"></div>  -->
-                <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747547898/banner_ci5ijf.jpg" alt="image"
+                <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749565114/banner_ci5ijf_w3sstm.jpg" alt="image"
                   class="pc-img relative z-20">
                 <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747547898/banner_ci5ijf.jpg" alt="image" class="mobile-img relative z-20">
               </div>
@@ -286,13 +361,12 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                 </div>
               </div>
             </div>
-            <!-- <div style="position: absolute; left: 0; right: 0; bottom: 0; height: 250px;background: linear-gradient(0deg,rgba(221, 248, 140, 1) 0%, rgba(255, 255, 255, 0) 100%);"></div> -->
           </section>
 
           <!-- hero area end  -->
 
           <!-- about area start  -->
-          <section class="intDesigner-about__area pt-150 pb-150" style="background-color: #1D181D;position: relative;">
+          <section class="intDesigner-about__area pt-150 pb-150" style="background: linear-gradient(0deg,#4E8711 0%, rgba(22, 14, 13, 1) 47%);">
             <h3 class="side-title">02 - ABOUT</h3>
             <div class="cf_image intDesigner-about__area-bg">
               <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747464649/dot-bg_mru5iv.png" alt="image keralahome Constructors Kerala Project">
@@ -336,8 +410,16 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
           <!-- about area end  -->
 
           <!-- project area start  -->
-          <section class="intDesigner-project__area" style="background-color:#4a000a; padding-top: 50px;">
+          <section class="intDesigner-project__area" style="background-color:#4E8711; padding-top: 50px;position: relative;">
             <h3 class="side-title">03 - Portfolio</h3>
+            <div style="position: absolute;top: 0;bottom: 0;left: 0;right: 0;opacity: .1;rotate: 70deg">
+              <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749721135/Adobe_Express_-_file_3_uml1jk.png" alt="" style="width: 100%;height: 100%; object-fit: cover;">
+            </div>
+            <!-- NEW: Leaf Animation Container -->
+            <div class="leaf-container" id="leafContainer"></div>
+        
+            <!-- NEW: Bubble Animation Container -->
+            <div class="bubble-container" id="bubbleContainer"></div>
             <div class="container">
               <div class="intDesigner-project__area-title-box mb-110">
                 <div class="intDesigner-project__sec-title-wrapper">
@@ -347,11 +429,6 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                 <div class="intDesigner-services__box has_fade_anim">
                   <span class="years-since" style="color: #F3EEEA;">Since 2006</span>
                   <div class="intDesigner-services__list">
-                    <!-- <ul>
-                      <li>Construction</li>
-                      <li>Interior Design</li>
-                      <li>Architecture</li>
-                    </ul> -->
                     <h5 style="color: #FFEAC5;">We Bring Comfort Within Reach.
                        <br style="color: #FFEAC5;"> Crafting Quality Homes and Villas with Care, Tradition, and Modern Technology.
                     </h5>
@@ -364,7 +441,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <div class="intDesigner-portfolio__thumb">
                       <a href="#">
                         <div class="cf_image">
-                          <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748595932/poothur_residency_puthhur_thrissur_etg1mm.jpg" style="z-index: 10;" alt="Portfolio Image">
+                          <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749555232/perumattycopy_yo4l1w.jpg" style="z-index: 10;" alt="Portfolio Image">
                         </div>
                       </a>
                     </div>
@@ -382,14 +459,14 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <div class="intDesigner-portfolio__thumb">
                       <a href="#">
                         <div class="cf_image">
-                          <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748596169/wayanad_hotels_propreter_mahajoor_hubrol.jpg" alt="Portfolio Image" style="z-index: 10;">
+                          <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749555234/sajiviswanadhenside_arlhv5.jpg" alt="Portfolio Image" style="z-index: 10;">
                         </div>
                       </a>
                     </div>
                     
                     <div class="interior-portfolio__content has_fade_anim">
-                      <a href="project/Srinivasas.html">
-                        <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">Mahjoor Hotel</h3>
+                      <a href="#">
+                        <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">Saji Viswanadhan</h3>
                       </a>
                       <p style="color: #F3EEEA;">Wayanad</p>
                     </div>
@@ -406,7 +483,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     </div>
 
                     <div class="interior-portfolio__content has_fade_anim">
-                      <a href="project/Zaheesh.html">
+                      <a href="#">
                         <h3 class="intDesigner-portfolio__title text-uppercase" style="color: #FFEAC5;">DRM Bungalow</h3>
                       </a>
                       <p style="color: #F3EEEA;">Palakkad</p>
@@ -418,14 +495,14 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <div class="intDesigner-portfolio__thumb">
                       <a href="#">
                         <div class="cf_image">
-                          <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747465418/vayanad_wdhofa.jpg" style="z-index: 10;" alt="Portfolio Image">
+                          <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749555233/MAHAJOOR_hpv4nm.jpg" style="z-index: 10;" alt="Portfolio Image">
                         </div>
                       </a>
                     </div>
 
                     <div class="interior-portfolio__content has_fade_anim">
-                      <a href="project/Sparsh-house.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Villa Project</h3>
+                      <a href="#">
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Mahjoor Hotel</h3>
                       </a>
                       <p style="color: #F3EEEA;">Wayanad</p>
                     </div>
@@ -436,14 +513,14 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <div class="intDesigner-portfolio__thumb">
                       <a href="#">
                         <div class="cf_image">
-                          <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748596595/SRI_VENKIDAM_HOTEL_copy_fcyz3p.jpg" style="z-index: 10;" alt="Portfolio Image">
+                          <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749555235/FOURTUNEPLAZZA_oruey6.jpg" style="z-index: 10;" alt="Portfolio Image">
                         </div>
                       </a>
                     </div>
 
                     <div class="interior-portfolio__content has_fade_anim">
-                      <a href="project/Muniraj.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Sri Venkidam Hotel</h3>
+                      <a href="#">
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Fourtune Plazza</h3>
                       </a>
                       <p style="color: #F3EEEA;">Kerala</p>
                     </div>
@@ -455,13 +532,13 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <div class="intDesigner-portfolio__thumb">
                       <a href="#">
                         <div class="cf_image">
-                          <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748596801/prajith_padukad_drawing_qteype.jpg" style="z-index: 10;" alt="Portfolio Image">
+                          <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749555232/sreekrishnapuram22_f5pkyh.jpg" style="z-index: 10;" alt="Portfolio Image">
                         </div>
                       </a>
                     </div>
                     <div class="interior-portfolio__content has_fade_anim">
-                      <a href="project/Sandhesh.html">
-                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Prajith</h3>
+                      <a href="#">
+                        <h3 class="intDesigner-portfolio__title" style="color: #FFEAC5;">Sree Krishnapuram</h3>
                       </a>
                       <p style="color: #F3EEEA;">Pudukkad, Thrissur</p>
                     </div>
@@ -474,11 +551,11 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
           <!-- project area end  -->
 
           <!-- fact area start  -->
-          <section class="intDesigner-fact__area pt-150 pb-140 zi-1" style="background-color:#4a000a;">
+          <section class="intDesigner-fact__area pt-150 pb-140 zi-1" style="background-color:#4E8711;">
             <div class="container">
               <div class="intDesigner-counter__items-wrapper">
                 <div class="intDesigner-counter__item has_fade_anim">
-                  <h3 class="intDesigner-counter__number wc-counter " style="color: #FFEAC5;">18<span>+</span></h3>
+                  <h3 class="intDesigner-counter__number wc-counter " style="color: #FFEAC5;">25<span>+</span></h3>
                   <div class="cf_text intDesigner-counter__text">
                     <p style="color: #F3EEEA;">years of Experience <br>
                       With over 6 Million Sq.fts
@@ -496,8 +573,12 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
           <!-- fact area end  -->
 
           <!-- services area start  -->
-          <section class="intDesigner-service__area pt-150 pb-150" style="background-color: #4a000a;">
+          <section class="intDesigner-service__area pt-150 pb-150" style="background: linear-gradient(0deg,rgba(10, 9, 19, 1) 0%, rgba(78, 135, 17, 1) 47%);position: relative;">
             <h3 class="side-title">04 - Services </h3>
+            <div style="position: absolute;opacity: .1;">
+              <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749710009/Adobe_Express_-_file_2_z067rn.png" alt="">
+            </div>
+            
             <div class="container">
               <div class="intDesigner-service__sec-title-wrapper mb-120">
                 <h3 class="sec-sub-title-18 has_char_anim" style="color: #F3EEEA;">Our Expert</h3>
@@ -543,11 +624,11 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                       <div class="intDesigner-service__content">
                         <a href="#">
                           <div class="cf_image intDesigner-service__hoverImg img_anim_reveal">
-                            <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747469698/service-03_scypcq.webp" alt="service image">
+                            <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749556973/wmremove-transformed_4_agepns.jpg" alt="service image">
                           </div>
                         </a>
                         <div class="cf_text intDesigner-service__text has_fade_anim" >
-                          <p style="color: #F3EEEA;">At Kerala Home, we understand that every project is unique, which is why we take the time to listen to your needs, aspirations, and constraints. Whether you're planning a residential home, commercial building, or institutional facility, we offer tailored solutions that reflect your vision and exceed your expectations. With a focus on sustainability, functionality, and aesthetics, we strive to create architectural designs that stand the test of time. Kerala Home Constructors has the expertise and passion to turn your architectural dreams into reality. Contact us today to begin your architectural journey with confidence!
+                          <p style="color: #F3EEEA;">At Kerala Home, we believe every project deserves a personalized approach. From residential homes to commercial and institutional buildings, we craft tailored architectural designs that blend functionality, sustainability, and style. Our expert team builds from the initial concept to final plans, ensuring your vision becomes a reality. Choose Kerala Home Constructors for trusted architectural services in Kerala. Let’s build your dream space—get in touch today!
                           </p>
                            </div>
                         <div class="cf_btn intDesigner-service__btn has_fade_anim">
@@ -559,11 +640,11 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                       <div class="intDesigner-service__content">
                         <a href="#">
                           <div class="cf_image intDesigner-service__hoverImg img_anim_reveal">
-                            <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748597227/Biju_Joseph_thiroor_sd1cip.jpg" alt="service image">
+                            <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749557109/shaji_padukad_kpnvzb.jpg" alt="service image">
                           </div>
                         </a>
                         <div class="cf_text intDesigner-service__text has_fade_anim">
-                          <p style="color: #F3EEEA;">At Kerala Home Constructors, we specialize in top-notch house construction services that bring your vision to life. Our house construction process is designed to be seamless and stress-free. From initial consultation to final inspection, we work closely with you every step of the way to ensure that your needs and preferences are met. Using only the finest materials and the latest construction techniques, we guarantee a home that is not only beautiful but also built to last. Whether you're looking for a cozy family home or a luxurious villa, we have the expertise and resources to turn your dreams into reality. </p>
+                          <p style="color: #F3EEEA;">Kerala Home Constructors delivers reliable house construction services across Kerala, combining quality, durability, and modern design. We provide end-to-end solutions—from planning and approvals to finishing—tailored to your needs. Using premium materials and advanced techniques, our skilled team ensures your home is both strong and stylish. Whether it’s a compact family house or a premium villa, Kerala Home Constructors turns your dream home into reality with trusted construction expertise.</p>
                           
                         </div>
                         <div class="cf_btn intDesigner-service__btn has_fade_anim">
@@ -575,7 +656,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                       <div class="intDesigner-service__content">
                         <a href="#">
                           <div class="cf_image intDesigner-service__hoverImg img_anim_reveal">
-                            <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747470180/service-02_i5mioq.webp" alt="service image">
+                            <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749557281/LIVING_V1_t0ezz2.jpg" alt="service image">
                           </div>
                         </a>
                         <div class="cf_text intDesigner-service__text has_fade_anim">
@@ -607,7 +688,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                   </div>
                   
                   <div class="intDesigner-award__list has_fade_anim">
-                    <span><a href="cost-estimator.html">GET YOUR FREE QUOTE</a></span>
+                    <span><a href="#">GET YOUR FREE QUOTE</a></span>
                     
                   </div>
                   
@@ -617,10 +698,6 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747470301/Royallinks_Follow_Quality_Time_Speed_in_construction_zsrcgv.png" style="max-width: 400px;" class="show-dark" alt="image">
                     </div>
                   <div class="cf_text intDesigner-award__text has_fade_anim">
-                    <!-- <p>We Make Luxury Affordable  
-                      Building Custom Premium Homes/Villas with Quality Powered by Technology.
-                     Starting from Rs.1650/-
-                     </p> -->
                      <p>At Kerala Home construction company, QTS stands for Quality, Time, Speed – the core principles that drive our commitment to excellence.
                     </p>
                   </div>
@@ -628,29 +705,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
               </div>
             </div>
           </section>
-          <!-- award area end  -->
-
-          <!-- section separator start  -->
-          <!-- <div class="section-separator__area">
-            <div class="section-separator__line-vertical"></div>
-          </div> -->
-          
-          <!-- Exclusive homes banner area Start  -->
-          <!-- <div class="">
-            <div class="cf_image overflow-hidden">
-              <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747470449/Our_exlusive_home_Png-01_hwsbsr.webp" style="width: 100%;" alt="Image" data-speed="0.85">
-            </div>
-          </div> -->
-                    <!-- Exclusive homes banner area End  -->
-
-          
-          <!-- section separator end  -->
-          <!-- <div class="">
-            <div class="cf_image overflow-hidden">
-              <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747470517/VR_Banner_Final-04_hern2y.webp" style="width: 100%;" alt="Image" data-speed="0.85">
-            </div>
-          </div> -->
-
+    
           <!-- brands area start  -->
           <div class="intDesigner-brand__area pt-150">
             <div class="container">
@@ -669,43 +724,43 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                   </div>
                   <div class="cf_image intDesigner-brand__item">
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748600619/brand-8_nxg5xh.png" class="show-dark" alt="kairali tmt">
-                    <img src="assets/imgs/interior-designer/brand-03-dark.html" class="show-light" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748601251/BC__3_English-removebg-preview_fl21ia.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-04-dark.html" class="show-light" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748601786/images-removebg-preview_jk1ntv.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-05-dark.html" class="show-light" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748602040/pngwing.com_aoahoe.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-06-dark.html" class="show-light" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1748603467/finolex-pipes-111-6-removebg-preview_ahev9x.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-07-dark.html" class="show-light" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
-                    <img src="assets/imgs/interior-designer/brand-08.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-08-dark.html" class="show-light" alt="brand image">
+                    <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749707096/IMG_20250612_102527-removebg-preview_vv9y7l.png" class="show-dark" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
-                    <img src="assets/imgs/interior-designer/brand-09.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-09-dark.html" class="show-light" alt="brand image">
+                    <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749707816/IMG_20250612_102746-removebg-preview_smfaga.png" class="show-dark" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
-                    <img src="assets/imgs/interior-designer/brand-10.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-10-dark.html" class="show-light" alt="brand image">
+                    <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749707816/IMG_20250612_102640-removebg-preview_quz2u6.png" class="show-dark" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
-                    <img src="assets/imgs/interior-designer/brand-11.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-11-dark.html" class="show-light" alt="brand image">
+                    <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749708053/brand-09_x2iaof.png" class="show-dark" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                   <div class="cf_image intDesigner-brand__item">
-                    <img src="assets/imgs/interior-designer/brand-12.png" class="show-dark" alt="brand image">
-                    <img src="assets/imgs/interior-designer/brand-12-dark.html" class="show-light" alt="brand image">
+                    <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749708052/brand-07_atyazx.png" class="show-dark" alt="brand image">
+                    <img src="" class="show-light" alt="brand image">
                   </div>
                 </div>
               </div>
@@ -812,7 +867,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                   <p>All rights reserved by Kerala Home</p>
                 </div>
                 <div class="intDesigner-copyright__social">
-                  <a href="fb.com/iamkeralahome">Facebook</a><a href="#">Instagram</a><a href="#">Youtube</a><a href="https://wa.me/9846194508">Whatsapp</a>
+                  <a href="fb.com/iamkeralahome">Facebook</a><a href="https://www.instagram.com/kerala_home_viyyur">Instagram</a><a href="#">Youtube</a><a href="https://wa.me/9846194508">Whatsapp</a>
                 </div>
                 <div class="intDesigner__go-top">
                   <p>Powered by <a href="#">Unsaid Creative</a></p>
@@ -845,9 +900,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{% static 'js/main.js' %}"></script>
   <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
   <script src="{% static 'js/counter.js' %}"></script>
-  <!-- <script src="{% static 'js/typed.js' %}"></script> -->
-  <!-- <script src="{% static 'js/mixitup.min.js' %}"></script> -->
-  <!-- <script src="{% static 'js/progressbar.js' %}"></script> -->
   <script src="{% static 'js/gsap.min.js' %}"></script>
   <script src="{% static 'js/ScrollSmoother.min.js' %}"></script>
   <script src="{% static 'js/ScrollToPlugin.min.js' %}"></script>
@@ -856,12 +908,225 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{% static 'js/TweenMax.min.js' %}"></script>
   <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
   <script src="{% static 'js/beforeafter.jquery-1.0.0.min.js' %}"></script>
-  <!-- <script src="{% static 'js/basictable.min.js' %}"></script> -->
   <script src="{% static 'js/backToTop.js' %}"></script>
   <script src="{% static 'js/main.js' %}"></script>
   <script src="{% static 'js/error-handling.js' %}"></script>
   <script src="{% static 'js/offcanvas.js' %}"></script>
   <script src="{% static 'js/wc-cursor.js' %}"></script>
+  <script>
+        // Enhanced Animation Controller Class
+        class PortfolioAnimations {
+            constructor() {
+                this.leafContainer = document.getElementById('leafContainer');
+                this.bubbleContainer = document.getElementById('bubbleContainer');
+                this.sectionHeight = 0;
+                this.sectionWidth = 0;
+                this.isVisible = false;
+                
+                this.init();
+            }
+            
+            init() {
+                this.updateDimensions();
+                this.setupIntersectionObserver();
+                this.startAnimations();
+                
+                // Handle resize events
+                window.addEventListener('resize', () => {
+                    clearTimeout(this.resizeTimeout);
+                    this.resizeTimeout = setTimeout(() => {
+                        this.updateDimensions();
+                    }, 150);
+                });
+            }
+            
+            updateDimensions() {
+                const section = document.querySelector('.intDesigner-project__area');
+                this.sectionHeight = section.offsetHeight;
+                this.sectionWidth = section.offsetWidth;
+            }
+            
+            setupIntersectionObserver() {
+                const options = {
+                    root: null,
+                    rootMargin: '50px',
+                    threshold: 0.1
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        this.isVisible = entry.isIntersecting;
+                    });
+                }, options);
+                
+                observer.observe(document.querySelector('.intDesigner-project__area'));
+            }
+            
+            createLeaf() {
+              if (!this.isVisible) return;
+
+              const leaf = document.createElement('div');
+              leaf.className = 'leaf';
+
+              const img = document.createElement('img');
+              img.src = "https://res.cloudinary.com/ddvts796m/image/upload/v1749722790/pngwing.com_3_yqeshp.png";
+              img.alt = "Leaf";
+              leaf.appendChild(img);
+
+              // Random start position
+              const startX = Math.random() * this.sectionWidth;
+              const startY = -50;
+              leaf.style.left = startX + 'px';
+              leaf.style.top = startY + 'px';
+
+              this.leafContainer.appendChild(leaf);
+
+              // Animate
+              const tl = gsap.timeline({
+                onComplete: () => leaf.remove()
+              });
+
+              tl.set(leaf, { opacity: 1 })
+                .to(leaf, {
+                  duration: gsap.utils.random(6, 10),
+                  y: this.sectionHeight + 100,
+                  x: `+=${gsap.utils.random(-100, 200)}`,
+                  rotation: gsap.utils.random(180, 540),
+                  ease: "none"
+                })
+                .to(leaf, {
+                  duration: 2,
+                  opacity: 0,
+                  ease: "power2.out"
+                }, "-=2");
+
+              gsap.to(leaf, {
+                duration: gsap.utils.random(2, 4),
+                x: `+=${gsap.utils.random(-30, 30)}`,
+                ease: "sine.inOut",
+                repeat: -1,
+                yoyo: true
+              });
+            }
+
+            
+            createBubble() {
+                if (!this.isVisible) return;
+                
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                
+                // Random size and position
+                const size = gsap.utils.random(20, 80);
+                bubble.style.width = size + 'px';
+                bubble.style.height = size + 'px';
+                
+                // Random starting position from any side
+                const side = Math.floor(Math.random() * 4);
+                let startX, startY, endX, endY;
+                
+                switch(side) {
+                    case 0: // Top
+                        startX = Math.random() * this.sectionWidth;
+                        startY = -size;
+                        endX = startX + gsap.utils.random(-200, 200);
+                        endY = this.sectionHeight + size;
+                        break;
+                    case 1: // Right
+                        startX = this.sectionWidth + size;
+                        startY = Math.random() * this.sectionHeight;
+                        endX = -size;
+                        endY = startY + gsap.utils.random(-200, 200);
+                        break;
+                    case 2: // Bottom
+                        startX = Math.random() * this.sectionWidth;
+                        startY = this.sectionHeight + size;
+                        endX = startX + gsap.utils.random(-200, 200);
+                        endY = -size;
+                        break;
+                    case 3: // Left
+                        startX = -size;
+                        startY = Math.random() * this.sectionHeight;
+                        endX = this.sectionWidth + size;
+                        endY = startY + gsap.utils.random(-200, 200);
+                        break;
+                }
+                
+                bubble.style.left = startX + 'px';
+                bubble.style.top = startY + 'px';
+                
+                this.bubbleContainer.appendChild(bubble);
+                
+                // GSAP Animation Timeline
+                const tl = gsap.timeline({
+                    onComplete: () => {
+                        bubble.remove();
+                    }
+                });
+                
+                // Animate bubble floating
+                tl.to(bubble, {
+                    duration: 0.5,
+                    opacity: 0.6,
+                    scale: 1,
+                    ease: "back.out(1.7)"
+                })
+                .to(bubble, {
+                    duration: gsap.utils.random(8, 15),
+                    x: endX - startX,
+                    y: endY - startY,
+                    ease: "none"
+                }, 0.2)
+                .to(bubble, {
+                    duration: 1,
+                    opacity: 0,
+                    scale: 0.8,
+                    ease: "power2.in"
+                }, "-=1");
+                
+                // Add floating motion
+                gsap.to(bubble, {
+                    duration: gsap.utils.random(3, 6),
+                    y: `+=${gsap.utils.random(-50, 50)}`,
+                    ease: "sine.inOut",
+                    repeat: -1,
+                    yoyo: true
+                });
+            }
+            
+            startAnimations() {
+                // Leaf animation intervals
+                const createLeafInterval = () => {
+                    this.createLeaf();
+                    setTimeout(createLeafInterval, gsap.utils.random(3000, 8000));
+                };
+                
+                // Bubble animation intervals
+                const createBubbleInterval = () => {
+                    this.createBubble();
+                    setTimeout(createBubbleInterval, gsap.utils.random(4000, 10000));
+                };
+                
+                // Start with slight delays
+                setTimeout(createLeafInterval, 1000);
+                setTimeout(createBubbleInterval, 2000);
+            }
+        }
+        
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            new PortfolioAnimations();
+        });
+        
+        // Performance optimization: Pause animations when tab is not visible
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                gsap.globalTimeline.pause();
+            } else {
+                gsap.globalTimeline.resume();
+            }
+        });
+    </script>
 
 
 
