@@ -93,6 +93,11 @@
   <link rel="stylesheet" href="{% static 'css/master-dentist.css' %}">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-FM9nNUYrRBAEL5H1uQQ/DBxcFFX2YvU9ZgRmQ9ZQ/r5Qm4wqZw3N0b1EmwpGN5p3AhC8kg==">
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   
   <!-- Custom Fonts -->
   <link rel="stylesheet" href="{% static 'fonts/ClashDisplay/ClashDisplay-Regular.ttf' %}">
@@ -188,6 +193,60 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
     background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
     border-radius: 50%;
   }
+ .slider-container {
+      position: relative;
+      overflow: hidden;
+      padding: 150px 0;
+      background-color: #18230F;
+    }
+
+    .curve-top,
+    .curve-bottom {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: #18230F;
+      z-index: 10;
+    }
+
+    .curve-top {
+      top: 0;
+      border-bottom-left-radius: 100% 100px;
+      border-bottom-right-radius: 100% 100px;
+    }
+
+    .curve-bottom {
+      bottom: 0;
+      border-top-left-radius: 100% 100px;
+      border-top-right-radius: 100% 100px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 600px;
+    }
+
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
 
   /* Responsive Design */
   @media (max-width: 768px) {
@@ -201,6 +260,45 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
     }
     .HomeTitleDesign2{
       font-size: 50px;
+    }
+    .slider-title {
+        font-size: 2rem;
+        top: 30px;
+    }
+    
+    .slide-item {
+        height: 300px;
+        margin: 0 10px;
+    }
+    
+    .owl-nav {
+        padding: 0 20px;
+    }
+    
+    .owl-nav button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+    /* .curve-top,
+    .curve-bottom{
+      height: 200px;
+    } */
+    .curve-top{
+      border-bottom-left-radius: 30% 30px;
+      border-bottom-right-radius: 30% 30px;
+      height: 100px;
+    }
+    .curve-bottom {
+      border-top-left-radius: 30% 30px;
+      border-top-right-radius: 30% 30px;
+      height: 100px;
+    }
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      padding: 50px 0;
+      background-color: #18230F;
     }
   }
 
@@ -354,9 +452,9 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
               <div class="intDesigner-hero__overlay"></div>
               <div class="has_image_zoom cf_image h-100 overflow-hidden mix-blend-multiply relative">
                 <!-- <div class="absolute inset-0 bg-black opacity-50 z-10"></div>  -->
-                <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749753534/Artboard_1_mkiytb.jpg" alt="image"
+                <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750267345/22_1_qmull5.jpg" alt="image"
                   class="pc-img relative z-20">
-                <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747547898/banner_ci5ijf.jpg" alt="image" class="mobile-img relative z-20">
+                <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750267345/22_1_qmull5.jpg" alt="image" class="mobile-img relative z-20">
               </div>
             </div>
             <div class="container">
@@ -391,7 +489,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                         <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747560921/Adobe_Express_-_file_1_j4s2nu.png" alt="Portfolio Image">
                     </div>
                     <div class="cf-insd__button-wrapper">
-                      <a href="https://res.cloudinary.com/ddvts796m/video/upload/v1749800020/wayanad_ramesh_hsjcv2.mp4" class="video-popup">
+                      <a href="https://res.cloudinary.com/ddvts796m/video/upload/v1750267001/DWARKA_-_HOME_TOUR_-_KERALA_HOME_1_t3s9fl.mp4" class="video-popup">
                         <div class="btn-wrapper cf_modal">
                           <div class="btn-item">
                             <div class="wc-play-icon play-icon-border"><i class=" fa fa-solid fa-play"></i></div>
@@ -577,6 +675,59 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
             </div>
           </section>
           <!-- fact area end  -->
+
+          <!-- Slider Start -->
+          <div class="slider-container">
+            <div class="curve-top"></div>
+          
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275288/DSC09969_azjubn.jpg"
+                    alt="Slide 1" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275283/mahajoor_2_lyx00q.jpg"
+                    alt="Slide 2" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275284/shookur_kechery_1_hxvkcd.jpg"
+                    alt="Slide 3" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275282/IMG_20211226_084737_oydbct.jpg"
+                    alt="Slide 4" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275281/kishoor_ponganamkadu_thrissur_ffgbt1.jpg"
+                    alt="Slide 5" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275280/jhonsen_guruvayoor_sqn1pv.jpg"
+                    alt="Slide 6" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275279/IMG_20210205_173248_eenclz.jpg"
+                    alt="Slide 7" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275279/jelow_ollary_urnlge.jpg"
+                    alt="Slide 8" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275278/jayesh_chelakottukara_xfa7df.jpg"
+                    alt="Slide 9" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275276/IMG_1595155331611_ocjyxo.jpg"
+                    alt="Slide 10" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275265/DSC_0068_yshknv.jpg"
+                    alt="Slide 11" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275264/IMG_1504_y6numu.jpg"
+                    alt="Slide 12" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275263/DSC_0645_hmvh3m.jpg"
+                    alt="Slide 13" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275262/IMG_20180207_093612_pkdely.jpg"
+                    alt="Slide 14" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275247/IMG_1160_ecig6t.jpg"
+                    alt="Slide 15" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275239/anand1_fpdrwg.jpg"
+                    alt="Slide 16" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275238/20150630_084921_jufvc6.jpg"
+                    alt="Slide 17" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275235/anandh_ankamaly_pb5j3e.jpg"
+                    alt="Slide 18" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275230/20140116_145540_t94tnv.jpg"
+                    alt="Slide 18" /></div>
+                <div class="swiper-slide"><img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750275230/AJAY_PETER.2_e1hp8o.jpg"
+                    alt="Slide 18" /></div>
+              </div>
+            </div>
+          
+            <div class="curve-bottom"></div>
+          </div>
+          <!-- Slider End -->
 
           <!-- services area start  -->
           <section class="intDesigner-service__area pt-150 pb-150" style="background: linear-gradient(0deg,rgba(10, 9, 19, 1) 0%, #18230F 47%);position: relative;">
@@ -816,9 +967,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
             </div>
           </section>
           <!-- cta area end  -->
-
         </main>
-
         
 
         <!-- Footer section start -->
@@ -920,221 +1069,261 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{% static 'js/offcanvas.js' %}"></script>
   <script src="{% static 'js/wc-cursor.js' %}"></script>
   <script>
-        // Enhanced Animation Controller Class
-        class PortfolioAnimations {
-            constructor() {
-                this.leafContainer = document.getElementById('leafContainer');
-                this.bubbleContainer = document.getElementById('bubbleContainer');
-                this.sectionHeight = 0;
-                this.sectionWidth = 0;
-                this.isVisible = false;
-                
-                this.init();
-            }
-            
-            init() {
-                this.updateDimensions();
-                this.setupIntersectionObserver();
-                this.startAnimations();
-                
-                // Handle resize events
-                window.addEventListener('resize', () => {
-                    clearTimeout(this.resizeTimeout);
-                    this.resizeTimeout = setTimeout(() => {
-                        this.updateDimensions();
-                    }, 150);
-                });
-            }
-            
-            updateDimensions() {
-                const section = document.querySelector('.intDesigner-project__area');
-                this.sectionHeight = section.offsetHeight;
-                this.sectionWidth = section.offsetWidth;
-            }
-            
-            setupIntersectionObserver() {
-                const options = {
-                    root: null,
-                    rootMargin: '50px',
-                    threshold: 0.1
-                };
-                
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        this.isVisible = entry.isIntersecting;
-                    });
-                }, options);
-                
-                observer.observe(document.querySelector('.intDesigner-project__area'));
-            }
-            
-            createLeaf() {
-              if (!this.isVisible) return;
+    // Enhanced Animation Controller Class
+    class PortfolioAnimations {
+      constructor() {
+        this.leafContainer = document.getElementById('leafContainer');
+        this.bubbleContainer = document.getElementById('bubbleContainer');
+        this.sectionHeight = 0;
+        this.sectionWidth = 0;
+        this.isVisible = false;
 
-              const leaf = document.createElement('div');
-              leaf.className = 'leaf';
+        this.init();
+      }
 
-              const img = document.createElement('img');
-              img.src = "https://res.cloudinary.com/ddvts796m/image/upload/v1749722790/pngwing.com_3_yqeshp.png";
-              img.alt = "Leaf";
-              leaf.appendChild(img);
+      init() {
+        this.updateDimensions();
+        this.setupIntersectionObserver();
+        this.startAnimations();
 
-              // Random start position
-              const startX = Math.random() * this.sectionWidth;
-              const startY = -50;
-              leaf.style.left = startX + 'px';
-              leaf.style.top = startY + 'px';
+        // Handle resize events
+        window.addEventListener('resize', () => {
+          clearTimeout(this.resizeTimeout);
+          this.resizeTimeout = setTimeout(() => {
+            this.updateDimensions();
+          }, 150);
+        });
+      }
 
-              this.leafContainer.appendChild(leaf);
+      updateDimensions() {
+        const section = document.querySelector('.intDesigner-project__area');
+        this.sectionHeight = section.offsetHeight;
+        this.sectionWidth = section.offsetWidth;
+      }
 
-              // Animate
-              const tl = gsap.timeline({
-                onComplete: () => leaf.remove()
-              });
+      setupIntersectionObserver() {
+        const options = {
+          root: null,
+          rootMargin: '50px',
+          threshold: 0.1
+        };
 
-              tl.set(leaf, { opacity: 1 })
-                .to(leaf, {
-                  duration: gsap.utils.random(6, 10),
-                  y: this.sectionHeight + 100,
-                  x: `+=${gsap.utils.random(-100, 200)}`,
-                  rotation: gsap.utils.random(180, 540),
-                  ease: "none"
-                })
-                .to(leaf, {
-                  duration: 2,
-                  opacity: 0,
-                  ease: "power2.out"
-                }, "-=2");
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            this.isVisible = entry.isIntersecting;
+          });
+        }, options);
 
-              gsap.to(leaf, {
-                duration: gsap.utils.random(2, 4),
-                x: `+=${gsap.utils.random(-30, 30)}`,
-                ease: "sine.inOut",
-                repeat: -1,
-                yoyo: true
-              });
-            }
+        observer.observe(document.querySelector('.intDesigner-project__area'));
+      }
 
-            
-            createBubble() {
-                if (!this.isVisible) return;
-                
-                const bubble = document.createElement('div');
-                bubble.className = 'bubble';
-                
-                // Random size and position
-                const size = gsap.utils.random(20, 80);
-                bubble.style.width = size + 'px';
-                bubble.style.height = size + 'px';
-                
-                // Random starting position from any side
-                const side = Math.floor(Math.random() * 4);
-                let startX, startY, endX, endY;
-                
-                switch(side) {
-                    case 0: // Top
-                        startX = Math.random() * this.sectionWidth;
-                        startY = -size;
-                        endX = startX + gsap.utils.random(-200, 200);
-                        endY = this.sectionHeight + size;
-                        break;
-                    case 1: // Right
-                        startX = this.sectionWidth + size;
-                        startY = Math.random() * this.sectionHeight;
-                        endX = -size;
-                        endY = startY + gsap.utils.random(-200, 200);
-                        break;
-                    case 2: // Bottom
-                        startX = Math.random() * this.sectionWidth;
-                        startY = this.sectionHeight + size;
-                        endX = startX + gsap.utils.random(-200, 200);
-                        endY = -size;
-                        break;
-                    case 3: // Left
-                        startX = -size;
-                        startY = Math.random() * this.sectionHeight;
-                        endX = this.sectionWidth + size;
-                        endY = startY + gsap.utils.random(-200, 200);
-                        break;
-                }
-                
-                bubble.style.left = startX + 'px';
-                bubble.style.top = startY + 'px';
-                
-                this.bubbleContainer.appendChild(bubble);
-                
-                // GSAP Animation Timeline
-                const tl = gsap.timeline({
-                    onComplete: () => {
-                        bubble.remove();
-                    }
-                });
-                
-                // Animate bubble floating
-                tl.to(bubble, {
-                    duration: 0.5,
-                    opacity: 0.6,
-                    scale: 1,
-                    ease: "back.out(1.7)"
-                })
-                .to(bubble, {
-                    duration: gsap.utils.random(8, 15),
-                    x: endX - startX,
-                    y: endY - startY,
-                    ease: "none"
-                }, 0.2)
-                .to(bubble, {
-                    duration: 1,
-                    opacity: 0,
-                    scale: 0.8,
-                    ease: "power2.in"
-                }, "-=1");
-                
-                // Add floating motion
-                gsap.to(bubble, {
-                    duration: gsap.utils.random(3, 6),
-                    y: `+=${gsap.utils.random(-50, 50)}`,
-                    ease: "sine.inOut",
-                    repeat: -1,
-                    yoyo: true
-                });
-            }
-            
-            startAnimations() {
-                // Leaf animation intervals
-                const createLeafInterval = () => {
-                    this.createLeaf();
-                    setTimeout(createLeafInterval, gsap.utils.random(3000, 8000));
-                };
-                
-                // Bubble animation intervals
-                const createBubbleInterval = () => {
-                    this.createBubble();
-                    setTimeout(createBubbleInterval, gsap.utils.random(4000, 10000));
-                };
-                
-                // Start with slight delays
-                setTimeout(createLeafInterval, 1000);
-                setTimeout(createBubbleInterval, 2000);
-            }
+      createLeaf() {
+        if (!this.isVisible) return;
+
+        const leaf = document.createElement('div');
+        leaf.className = 'leaf';
+
+        const img = document.createElement('img');
+        img.src = "https://res.cloudinary.com/ddvts796m/image/upload/v1749722790/pngwing.com_3_yqeshp.png";
+        img.alt = "Leaf";
+        leaf.appendChild(img);
+
+        // Random start position
+        const startX = Math.random() * this.sectionWidth;
+        const startY = -50;
+        leaf.style.left = startX + 'px';
+        leaf.style.top = startY + 'px';
+
+        this.leafContainer.appendChild(leaf);
+
+        // Animate
+        const tl = gsap.timeline({
+          onComplete: () => leaf.remove()
+        });
+
+        tl.set(leaf, { opacity: 1 })
+          .to(leaf, {
+            duration: gsap.utils.random(6, 10),
+            y: this.sectionHeight + 100,
+            x: `+=${gsap.utils.random(-100, 200)}`,
+            rotation: gsap.utils.random(180, 540),
+            ease: "none"
+          })
+          .to(leaf, {
+            duration: 2,
+            opacity: 0,
+            ease: "power2.out"
+          }, "-=2");
+
+        gsap.to(leaf, {
+          duration: gsap.utils.random(2, 4),
+          x: `+=${gsap.utils.random(-30, 30)}`,
+          ease: "sine.inOut",
+          repeat: -1,
+          yoyo: true
+        });
+      }
+
+
+      createBubble() {
+        if (!this.isVisible) return;
+
+        const bubble = document.createElement('div');
+        bubble.className = 'bubble';
+
+        // Random size and position
+        const size = gsap.utils.random(20, 80);
+        bubble.style.width = size + 'px';
+        bubble.style.height = size + 'px';
+
+        // Random starting position from any side
+        const side = Math.floor(Math.random() * 4);
+        let startX, startY, endX, endY;
+
+        switch (side) {
+          case 0: // Top
+            startX = Math.random() * this.sectionWidth;
+            startY = -size;
+            endX = startX + gsap.utils.random(-200, 200);
+            endY = this.sectionHeight + size;
+            break;
+          case 1: // Right
+            startX = this.sectionWidth + size;
+            startY = Math.random() * this.sectionHeight;
+            endX = -size;
+            endY = startY + gsap.utils.random(-200, 200);
+            break;
+          case 2: // Bottom
+            startX = Math.random() * this.sectionWidth;
+            startY = this.sectionHeight + size;
+            endX = startX + gsap.utils.random(-200, 200);
+            endY = -size;
+            break;
+          case 3: // Left
+            startX = -size;
+            startY = Math.random() * this.sectionHeight;
+            endX = this.sectionWidth + size;
+            endY = startY + gsap.utils.random(-200, 200);
+            break;
         }
-        
-        // Initialize animations when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            new PortfolioAnimations();
-        });
-        
-        // Performance optimization: Pause animations when tab is not visible
-        document.addEventListener('visibilitychange', () => {
-            if (document.hidden) {
-                gsap.globalTimeline.pause();
-            } else {
-                gsap.globalTimeline.resume();
-            }
-        });
-    </script>
 
+        bubble.style.left = startX + 'px';
+        bubble.style.top = startY + 'px';
 
+        this.bubbleContainer.appendChild(bubble);
+
+        // GSAP Animation Timeline
+        const tl = gsap.timeline({
+          onComplete: () => {
+            bubble.remove();
+          }
+        });
+
+        // Animate bubble floating
+        tl.to(bubble, {
+          duration: 0.5,
+          opacity: 0.6,
+          scale: 1,
+          ease: "back.out(1.7)"
+        })
+          .to(bubble, {
+            duration: gsap.utils.random(8, 15),
+            x: endX - startX,
+            y: endY - startY,
+            ease: "none"
+          }, 0.2)
+          .to(bubble, {
+            duration: 1,
+            opacity: 0,
+            scale: 0.8,
+            ease: "power2.in"
+          }, "-=1");
+
+        // Add floating motion
+        gsap.to(bubble, {
+          duration: gsap.utils.random(3, 6),
+          y: `+=${gsap.utils.random(-50, 50)}`,
+          ease: "sine.inOut",
+          repeat: -1,
+          yoyo: true
+        });
+      }
+
+      startAnimations() {
+        // Leaf animation intervals
+        const createLeafInterval = () => {
+          this.createLeaf();
+          setTimeout(createLeafInterval, gsap.utils.random(3000, 8000));
+        };
+
+        // Bubble animation intervals
+        const createBubbleInterval = () => {
+          this.createBubble();
+          setTimeout(createBubbleInterval, gsap.utils.random(4000, 10000));
+        };
+
+        // Start with slight delays
+        setTimeout(createLeafInterval, 1000);
+        setTimeout(createBubbleInterval, 2000);
+      }
+    }
+
+    // Initialize animations when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+      new PortfolioAnimations();
+    });
+
+    // Performance optimization: Pause animations when tab is not visible
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        gsap.globalTimeline.pause();
+      } else {
+        gsap.globalTimeline.resume();
+      }
+    });
+  </script>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    slidesPerView: 1,
+    spaceBetween: 0,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+    on: {
+      slideChangeTransitionStart: () => {
+        const slides = document.querySelectorAll('.swiper-slide img');
+        gsap.fromTo(slides, { opacity: 0 }, { opacity: 1, duration: 1, stagger: 0.1 });
+      },
+    },
+  });
+
+  window.addEventListener("load", () => {
+    gsap.from(".swiper-slide img", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+  });
+</script>
 
 </body>
 </html>

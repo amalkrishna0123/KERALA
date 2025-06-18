@@ -76,6 +76,39 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
   .aboutbottomImg{
     width: 100%;
   }
+  /* summit */
+.summit{
+    width: 100%;
+    height: 30vw;
+    /* background-color: #0a1a0d; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.summit-img{
+    width: 100%;
+    height: auto;
+   margin-top: -35%;
+    animation: summitAnim 12s ease 0s infinite normal forwards;
+    transition: all 2s ease;
+}
+@keyframes summitAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    33.33% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    66.66% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
   @media screen and (max-width : 768px) {
     .AboutParallax{
       width: 100%;
@@ -307,12 +340,18 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
           </section>
           <!-- award area start  -->
           
-            <div class="cf_image overflow-hidden AboutParallax">
+            <div class="cf_image overflow-hidden AboutParallax" style="position: relative;">
               <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749751204/WhatsApp_Image_2025-06-12_at_23.27.19_61179c69_llmt03.jpg" alt="Image" style="width: 100%;height: 100%;object-fit: cover;" data-speed="0.85">
+              <!-- <div class="summit" style="position: absolute;z-index: 999;top: 0;">
+              <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750279095/Adobe_Express_-_file_71_rjct3q.png" alt="" class="summit-img">
+            </div> -->
             </div>
           
           <!-- CEO AREA START -->
-          <section class="int-inab-area pt-100 pb-100" style="background-color: #18230F;">
+          <section class="int-inab-area pt-100 pb-100" style="background-color: #18230F;position: relative;">
+            <!-- <div class="summit">
+              <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750279095/Adobe_Express_-_file_71_rjct3q.png" alt="" class="summit-img">
+            </div> -->
             <div class="cf_image intDesigner-about__area-bg">
               <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747464649/dot-bg_mru5iv.png" style="border-top-left-radius: 50px;border-bottom-right-radius: 50px;" alt="image">
             </div>
