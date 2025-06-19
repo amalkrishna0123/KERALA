@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e4b@2+gssi0ejldp&2$b9oc@k@%=dq+kf+$%l8+38hq7&2r@=1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'keralahome.in', 'www.keralahome.in']
 
 
 # Application definition
