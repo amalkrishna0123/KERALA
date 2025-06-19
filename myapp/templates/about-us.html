@@ -79,16 +79,25 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
   /* summit */
 .summit{
     width: 100%;
-    height: 30vw;
+    max-width: 1500px;
+    margin: auto;
+    height: 20vw;
     /* background-color: #0a1a0d; */
     display: flex;
     align-items: center;
     justify-content: center;
+    top: -200px;
+}
+.AwardSection{
+  padding-bottom: 200px;
+}
+.AwaardContainer{
+  position: relative;z-index: 10;padding-bottom: 30px;padding-top: 200px;
 }
 .summit-img{
-    width: 100%;
+    width: 70%;
     height: auto;
-   margin-top: -35%;
+   /* margin-top: -5%; */
     animation: summitAnim 12s ease 0s infinite normal forwards;
     transition: all 2s ease;
 }
@@ -113,6 +122,15 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
     .AboutParallax{
       width: 100%;
       height: 100%;
+    }
+    .AwaardContainer{
+      padding-top: 30px;
+    }
+    .summit{
+      top: 0;
+    }
+    .summit-img{
+      width: 100%;
     }
   }
 </style>
@@ -266,7 +284,7 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
         <main>
 
           <!-- about inner area start  -->
-          <section class="int-inab-area pt-150 pb-150" style="background-color:#18230F;">
+          <section class="int-inab-area pt-150" style="background-color:#18230F;">
             <div class="cf_image intDesigner-about__area-bg">
               <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749710210/Adobe_Express_-_file_2_s9qwql.png" style="opacity: .1;object-fit: contain;" alt="image">
             </div>
@@ -310,8 +328,8 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
           <!-- about inner area end  -->
 
           <!-- award area start  -->
-          <section class="intDesigner-award__area pb-100 int-inab-videotext" style="background-color: #18230F;">
-            <div class="container">
+          <section class="intDesigner-award__area pb-100 int-inab-videotext AwardSection" style="background-color: #18230F;position: relative;">
+            <div class="container AwaardContainer" style="background-color: #18230F;">
               <div class="intDesigner-award__area-text-box">
                 <div class="">
                   <div class="intDesigner-award__sec-title-wrapper">
@@ -329,13 +347,16 @@ src="https://www.facebook.com/tr?id=595349418827774&amp;ev=PageView&amp;noscript
                     <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747471787/Homely_Experience-01_qe0zae.png" style="max-width: 400px;" class="show-dark" alt="image">
                     </div>
                   <div class="cf_text intDesigner-award__text">
-                    <p style="color: #F3EEEA;">Working for almost 10 years, when that presents
+                    <p style="color: #F3EEEA;">Working for almost 25 years, when that presents
                       a skilled team is dedicated to creating unique and functional designs that enhance the lives of
                       live
                       and work in them.</p>
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="summit" style="position: relative;z-index: 1;">
+              <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750324805/Artboard_10_xu8mce.png" alt="" class="summit-img">
             </div>
           </section>
           <!-- award area start  -->
