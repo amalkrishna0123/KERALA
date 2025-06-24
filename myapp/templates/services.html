@@ -11,6 +11,9 @@
   <meta name="keywords" content="house construction services Kerala, traditional home contractors, home construction Thrissur, construction company Kerala, building contractors Kerala, residential construction, commercial construction contractors, Kerala Home builders, trusted construction services">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 
   <title>Services Kerala Home | Traditional Kerala Home Construction in Thrissur</title>
 
@@ -41,6 +44,74 @@
 
   <link href="../maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+      min-height: 500px;
+    }
+    /* Ensure Swiper container is responsive */
+
+/* Ensure images don't overflow */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.HiddenSlider{
+  display: block;
+}
+.HiddenSliderOrg{
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .intDesigner-about__area-inner {
+    flex-direction: column !important;
+  }
+
+  .intDesigner-about__text-wrapper {
+    width: 100% !important;
+    padding: 1rem;
+  }
+
+  .swiper-container {
+    margin-bottom: 1.5rem;
+    height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .HiddenSlider{
+    display : none;
+  }
+  .HiddenSliderOrg{
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .swiper-slide img {
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .intDesigner-portfolio__title {
+    font-size: 1.5rem !important;
+    line-height: 1.8rem !important;
+    text-align: center;
+  }
+
+  .cf_text p {
+    font-size: 0.95rem;
+    text-align: justify;
+  }
+}
+
+  </style>
 </head>
 
 
@@ -255,7 +326,7 @@
             <div class="intDesigner-service__content">
               <a href="#">
                 <div class="cf_image intDesigner-service__hoverImg img_anim_reveal">
-                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749557109/shaji_padukad_kpnvzb.jpg" alt="service image">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749557109/shaji_padukad_kpnvzb.jpg" alt="service image" data-speed="0.85">
                 </div>
               </a>
               <div class="cf_text intDesigner-service__text has_fade_anim">
@@ -270,7 +341,7 @@
             <div class="intDesigner-service__content">
               <a href="#">
                 <div class="cf_image intDesigner-service__hoverImg img_anim_reveal">
-                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749557281/LIVING_V1_t0ezz2.jpg" alt="service image">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749557281/LIVING_V1_t0ezz2.jpg" alt="service image" data-speed="0.85">
                 </div>
               </a>
               <div class="cf_text intDesigner-service__text has_fade_anim">
@@ -287,7 +358,7 @@
             <div class="intDesigner-service__content">
               <a href="#">
                 <div class="cf_image intDesigner-service__hoverImg img_anim_reveal">
-                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749754524/Artboard_1_up9buw.png" alt="service image">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1749754524/Artboard_1_up9buw.png" alt="service image" data-speed="0.85">
                 </div>
               </a>
               <div class="cf_text intDesigner-service__text has_fade_anim">
@@ -351,24 +422,106 @@
   <div class="container">
     <div class="intDesigner-about__area">
       <div class="container">
-      
+  
         <div class="intDesigner-about__area-inner p-0">
-          <div class="intDesigner-about__text-wrapper has_fade_anim">
-            <div class="cf_image intDesigner-about__thumb img_anim_reveal">
-              <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747474172/Why_entrust_us_-_Banner_FInal-01-01_ljlw4q.webp" alt="image">
+          <div class="intDesigner-about__text-wrapper has_fade_anim w-full HiddenSlider lg:w-1/2">
+            <div class="swiper-container rounded-2xl overflow-hidden shadow-lg">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761116/STAIR_SITING_qwvcts.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761116/LIVING_V3_qd9ax0.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761123/FB_IMG_1577361634377_stnjuy.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761115/BED2_A_c6iscy.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761115/POAT_AREA_nvxf7f.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761097/DOOR_lzfrch.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761107/DINING_V3_bondtc.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761110/SITTING_pljutk.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761097/DOOR_lzfrch.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761107/DINING_V3_bondtc.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761057/BED1_A_mx5jgf.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761123/FB_IMG_1577361634377_stnjuy.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761122/FB_IMG_1577361565732_o1twub.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761119/FB_IMG_1577361540473_ihxcim.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761060/LIVING_V1_v2cokd.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="intDesigner-about__text-wrapper">
-            <h3 class="intDesigner-portfolio__title  has_text_reveal_anim" style="color: #FFEAC5;">Best Turnkey Service <br> Contractors in Kerala</h3>
+          <div class="intDesigner-about__text-wrapper" data-speed="0.85">
+            <h3 class="intDesigner-portfolio__title  has_text_reveal_anim" style="color: #FFEAC5;">Best Interior Service
+              <br> Contractors in Kerala</h3>
             <div class="cf_text intDesigner-about__text has_fade_anim">
-              <p style="color: #F3EEEA;">
-                At Kerala Home Constructors, we redefine convenience with our comprehensive turnkey services. Our turnkey approach means that we manage every aspect of your construction project, from initial design and planning to the final finishing touches. This all-inclusive service ensures a seamless, hassle-free experience for you, with a single point of contact throughout the entire process. As the leading turnkey service provider in Bangalore, we pride ourselves on delivering exceptional quality, attention to detail, and timely execution. Trust Kerala Home to transform your vision into reality, effortlessly and efficiently.
+              <p style="color: #F3EEEA;text-wrap: wrap;">
+                At Kerala Home Constructors, we redefine convenience with our comprehensive turnkey services. Our turnkey
+                approach means that we manage every aspect of your construction project, from initial design and planning
+                to the final finishing touches. This all-inclusive service ensures a seamless, hassle-free experience for
+                you, with a single point of contact throughout the entire process. As the leading turnkey service provider
+                in Bangalore, we pride ourselves on delivering exceptional quality, attention to detail, and timely
+                execution. Trust Kerala Home to transform your vision into reality, effortlessly and efficiently.
               </p>
-
+  
             </div>
-            
+  
           </div>
-          
+  
         </div>
       </div>
     </div>
@@ -376,9 +529,91 @@
 </section>
 
           <!-- client logo end -->
-          <div  style="width: 90%; margin: auto; text-align: center;">
+          <!-- <div  style="width: 90%; margin: auto; text-align: center;">
             <div class="cf_image overflow-hidden">
               <img src="https://res.cloudinary.com/dtouoqusd/image/upload/v1747474624/Turnkey_Services_-01_rzcuow.png" alt="Image" style="width: 90%;" data-speed="0.85">
+            </div>
+          </div> -->
+          <div class="intDesigner-about__text-wrapper HiddenSliderOrg has_fade_anim mx-auto cf_image" style="width: 90%;margin: auto;position: relative;z-index: 0;">
+            <div class="swiper-container rounded-2xl overflow-hidden shadow-lg">
+              <div class="swiper-wrapper">
+                
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761115/BED2_A_c6iscy.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761115/POAT_AREA_nvxf7f.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761097/DOOR_lzfrch.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761107/DINING_V3_bondtc.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761110/SITTING_pljutk.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761097/DOOR_lzfrch.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761107/DINING_V3_bondtc.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761057/BED1_A_mx5jgf.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761123/FB_IMG_1577361634377_stnjuy.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761122/FB_IMG_1577361565732_o1twub.jpg"
+                    class="w-full h-full object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761119/FB_IMG_1577361540473_ihxcim.jpg"
+                    class="w-full h-full object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[500px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761060/LIVING_V1_v2cokd.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[600px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761116/STAIR_SITING_qwvcts.jpg"
+                    class="w-full h-[600px] object-cover" alt="Slide 2" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[600px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761116/LIVING_V3_qd9ax0.jpg"
+                    class="w-full h-[600px] object-cover" alt="Slide 3" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+                <div class="swiper-slide relative w-full h-[600px]">
+                  <img src="https://res.cloudinary.com/ddvts796m/image/upload/v1750761123/FB_IMG_1577361634377_stnjuy.jpg"
+                    class="w-full h-full object-cover" alt="Slide 1" data-speed="0.85">
+                  <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+                </div>
+              </div>
             </div>
           </div>
           <!-- <div class="cf_image overflow-hidden pt-150" >
@@ -505,6 +740,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script src="{% static 'js/error-handling.js' %} "></script>
   <script src="{% static 'js/offcanvas.js' %}"></script>
   <script src="{% static 'js/wc-cursor.js' %}"></script>
+  <script>
+  new Swiper('.swiper-container', {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    speed: 1000,
+  });
+</script>
 
 </body>
 </html>
